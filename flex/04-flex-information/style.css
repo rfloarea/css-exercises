@@ -1,15 +1,45 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+/* leaving this for posterity, but it is not needed
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+*/
+
+.plant-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 52px;
+}
+
+.plant-type {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*margin: 52px; using `gap: 52px;` in .plant-container looks neater*/
+}
+
+.text {
+  text-align: center;
 }
 
 img {
   width: 100px;
   height: 100px;
+  margin-bottom: 4px;
 }
 
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin: 32px;
 }
 
 /* do not edit this footer */
@@ -24,3 +54,27 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* Their solution
+
+body {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 32px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.info {
+  max-width: 200px;
+}
+
+Note on html changes:
+We used different names for containers, but the structure is the same.
+*/
